@@ -5,10 +5,9 @@ import img3 from "../img/img7.jpg";
 import img4 from "../img/img8.jpg";
 import img5 from "../img/img9.jpg";
 
-export default function Gallery() {
+export default function Review({ darkMode }) {
   return (
-    <div className="review flex space-x-20 px-16 py-20">
-
+    <main className="review flex space-x-20 px-16 py-20">
       <div className="flex-col space-y-5">
         <h1 className='font-bold text-xl'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, adipisci?</h1>
         <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim sit ad ipsum, unde expedita quae voluptate cumque nostrum beatae rem cupiditate dolorem impedit animi at eius, consequuntur error placeat?</p>
@@ -29,7 +28,7 @@ export default function Gallery() {
         </div>
       </div>
 
-      <div className="flex-col rounded-md space-y-5 bg-zinc-700/40 p-5 w-full">
+      <div className={`flex-col rounded-md space-y-5 ${darkMode ? "bg-zinc-700/40" : "bg-zinc-200"} p-5 w-full`}>
         <div className="flex items-center space-x-5">
           <img src={img1} alt="pic" className="rounded-full w-14 h-14" />
           <div className="flex-col">
@@ -46,7 +45,6 @@ export default function Gallery() {
         </div>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique eveniet cum commodi corporis adipisci nam vel enim reprehenderit sit. Molestias odit autem labore provident explicabo eum esse minus beatae.</p>
       </div>
-
-    </div>
+    </main>
   )
 }

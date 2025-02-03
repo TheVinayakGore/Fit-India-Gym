@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Gallery() {
+export default function Form() {
 
   const inputClass = ("p-3 flex m-auto rounded-md bg-transparent/[0.4] w-full");
 
@@ -34,7 +34,7 @@ export default function Gallery() {
 
   return (
     <>
-      <form className="contact flex flex-col" onSubmit={handleSubmit}>
+      <form className="contact flex flex-col text-white" onSubmit={handleSubmit}>
 
         <div className="flex items-start justify-between m-auto px-16 py-48 w-full">
 
