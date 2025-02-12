@@ -38,7 +38,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
           {navLinks.map((link) => (
             <li key={link.id}>
               <ScrollLink to={link.to} spy={true} smooth={true} duration={500}>
-                <button className='hover:text-rose-500'>{link.label}</button>
+                <button className='hover:text-rose -500'>{link.label}</button>
               </ScrollLink>
             </li>
           ))}
